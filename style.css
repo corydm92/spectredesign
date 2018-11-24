@@ -30,6 +30,7 @@ header {
 
 .header-container {
     width: 100%;
+    max-width: 450px;
     display: grid;
 }
 
@@ -141,12 +142,13 @@ nav {
 /* ----- MAIN BODY / CONTENT ----- */
 
 .main-container {
-    margin: 0 12px;
+    padding: auto 12px;
     font-size: 12px;
+    max-width: 450px;
 }
 
 .main-content {
-
+    margin: auto 12px;
 }
 
 .home-para-container {
@@ -199,6 +201,11 @@ nav {
 }
 
 @media screen and (min-width: 925px) {
+
+    .logo {
+        margin-right: 12px;
+        margin-left: auto;
+    }    
 
 }
 
