@@ -70,7 +70,7 @@ h1 {
 nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    display: none;
+    /* display: none; */
 }
 
 .button1 {
@@ -168,6 +168,11 @@ nav {
     margin: 12px auto;
 }
 
+.work-pic {
+    width: 100%;
+    max-width: 450px;
+}
+
 .first-proj, .second-proj {
     width: 100%;
     max-width: 450px;
@@ -207,6 +212,28 @@ nav {
         margin-left: auto;
     }    
 
+
+    .header-container {
+        max-width: 925px;
+    }
+
+    .main-container, .home-para-container {
+        font-size: 18px;
+        max-width: 925px;
+        text-align: center;
+    }
+
+    .first-proj, .second-proj {
+        max-width: 925px;
+    }
+
+    .work-pic {
+        max-width: 450px;
+    }
+
+    .social-img {
+        max-width: 450px;
+    }
 }
 
 /* @media screen and (min-width: 1400px) {
