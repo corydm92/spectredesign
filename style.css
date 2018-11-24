@@ -193,8 +193,8 @@ nav {
 }
 
 .linkedin, .twitter, .facebook {
-    /* width: 75px;
-    height: 75px; */
+    width: 75px;
+    height: 75px;
     margin-bottom: 12px;
 }
 
@@ -204,5 +204,5 @@ nav {
 
 @media screen and (min-width: 1400px) {
 
-    
+
 }
