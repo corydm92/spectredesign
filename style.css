@@ -8,8 +8,8 @@ body {
     width: 100%;
     height: 100%;
     background-size: 450px;
-    background-repeat: no-repeat;
     background-position: center;
+    background-repeat: no-repeat;
     background-attachment: fixed; 
     background-color: black;
 
@@ -182,14 +182,27 @@ nav {
     width: 100%;
 }
 
+
+/* ----- FOOTER ----- */
+
 .social-img {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     max-width: 450px;
+    margin: 24px auto auto;
 }
 
-.linkedin, .instagram, .facebook {
-    width: 75px;
-    height: 75px;
+.linkedin, .twitter, .facebook {
+    /* width: 75px;
+    height: 75px; */
     margin-bottom: 12px;
+}
+
+@media screen and (min-width: 925px) {
+
+}
+
+@media screen and (min-width: 1400px) {
+
+    
 }
