@@ -58,8 +58,10 @@ h1 {
 }
 
 .logo img {
-    width: 85px;
+    width: 100%;
+    max-width: 85px;
     height: 75px;
+    /* display: none; */
 }
 
 .nav-container {
@@ -162,10 +164,10 @@ nav {
     margin: 0 auto;
 }
 
-.faux-divider {
+.faux-divider1, .faux-divider2, .faux-divider3 {
     border-bottom: 1px solid white; 
     width: 75%;
-    margin: 12px auto;
+    margin: 12px auto 24px;
 }
 
 .work-pic {
@@ -205,26 +207,42 @@ nav {
     margin-bottom: 12px;
 }
 
-@media screen and (min-width: 925px) {
+@media screen and (min-width: 950px) {
 
     .logo {
         margin-right: 12px;
         margin-left: auto;
     }    
 
-
     .header-container {
-        max-width: 925px;
+        max-width: 950px;
     }
 
     .main-container, .home-para-container {
         font-size: 18px;
-        max-width: 925px;
+        max-width: 950px;
         text-align: center;
     }
 
+    .home-para {
+        text-align: center;
+    }
+
+    .faux-divider2 {
+        display: none;
+    }
+
+    .main-container p {
+        margin: 12px 12px;
+    }
+
     .first-proj, .second-proj {
-        max-width: 925px;
+        max-width: 950px;
+    }
+
+    .work-pics-container {
+        display: flex;
+        justify-content: space-between;
     }
 
     .work-pic {
@@ -236,7 +254,25 @@ nav {
     }
 }
 
-/* @media screen and (min-width: 1400px) {
+@media screen and (min-width: 1400px) {
 
 
-} */
+    .header-container {
+        max-width: 1400px;
+    }
+
+    .main-container, .home-para-container {
+        max-width: 1400px;
+    }
+
+    .first-proj, .second-proj {
+        max-width: 1400px;
+    }
+
+    .work-pics-container p {
+        width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
