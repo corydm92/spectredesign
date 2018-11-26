@@ -52,8 +52,10 @@ h1 {
 }
 
 .logo {
-    grid-row: 1;
+    grid-row: 1 / span 2;
     grid-column: 2;
+    margin-top: auto;
+    margin-bottom: auto;
     /* margin-right: 24px;  */
 }
 
@@ -267,6 +269,7 @@ nav {
 
     .first-proj, .second-proj {
         max-width: 1400px;
+        background-color: rgb(0, 0, 0, 0);
     }
 
     .work-pics-container p {
