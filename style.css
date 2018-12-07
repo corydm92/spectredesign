@@ -13,15 +13,14 @@ body {
     color: white;
     font-family: 'Karla', sans-serif;
     font-family: 'Lato', sans-serif;
-    background-image: url("https://cdn-images-1.medium.com/max/1600/1*CqLPEo3Tw9SK6UoBl4FBuA.jpeg");
+    /* background-image: url("https://cdn-images-1.medium.com/max/1600/1*CqLPEo3Tw9SK6UoBl4FBuA.jpeg");
     width: 100%;
     height: 100%;
     background-size: 450px;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed; 
+    background-attachment: fixed;  */
     background-color: black;
-
 }
 
 .center {
@@ -98,8 +97,14 @@ h1 {
     padding: 6px;
     border-radius: 6px;
     height: 60px;
+    filter: invert(0%);
+    transition-duration: 500ms;
+    transition-property: filter, transform;
+}
 
-    /* display: none; */
+.menu.clicked {
+    transform: rotate(90deg);
+    filter: invert(100%);
 }
 
 .menu img {
@@ -108,12 +113,15 @@ h1 {
 }
 
 #nav-container {
-    /* grid-row: 0; */
     grid-column: 1 / span 2;
     margin-bottom: 12px;
     margin-right: 6px;
-    /* -webkit-transition: opacity 1s ease-out; */
-    transition: opacity 1s ease-out;
+    transition-property: opacity, height;
+    -webkit-transition-property: opacity, height;
+    transition-duration: 500ms;
+    -webkit-transition-duration: 500ms;
+    transition-timing-function: ease-out;
+    -webkit-transition-duration: ease-out;
     opacity: 0;
     height: 0;
     overflow: hidden;
@@ -121,7 +129,7 @@ h1 {
 
 #nav-container.clicked {
     opacity: 1;
-    height: auto;
+    height: 27px;
 }
 
 
