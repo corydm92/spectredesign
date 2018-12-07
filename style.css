@@ -117,18 +117,23 @@ h1 {
     opacity: 0;
     height: 0;
     overflow: hidden;
+    max-width: 450px;
 }
 
 #nav-container.clicked {
     opacity: 1;
-    height: 27px;
+    height: 28px;
 }
 
 
 nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    /* display: none; */
+}
+
+.main-nav button {
+    border: 3px solid white;
+    width: 72px;
 }
 
 .button1 {
@@ -182,6 +187,7 @@ nav {
     text-align: center;
     margin-right: 6px;
 }
+
 .myButton:hover {
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f6f6f6), color-stop(1, #ffffff));
 	background:-moz-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
@@ -192,6 +198,7 @@ nav {
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#ffffff',GradientType=0);
 	background-color:#f6f6f6;
 }
+
 .myButton:active {
 	position:relative;
 	top:1px;
@@ -271,11 +278,9 @@ nav {
 }
 
 #facebook-wrapper, #twitter-wrapper, #linkedin-wrapper {
-    background-color: white;
     width: 75px;
     height: 75px;
-    border: 1px solid white;
-    border-radius: 20%;
+    filter: invert(100%);
 }
 
 @media screen and (min-width: 950px) {
