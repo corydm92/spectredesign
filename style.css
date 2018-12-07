@@ -30,9 +30,9 @@ body {
     margin-right: auto;
 }
 
-.display-none {
+/* .display-none {
     display: none;
-}
+} */
 
 .display-inline-block {
     display: inline-block;
@@ -112,14 +112,15 @@ h1 {
     grid-column: 1 / span 2;
     margin-bottom: 12px;
     margin-right: 6px;
-    /* visibility: hidden; */
+    transition: opacity 1s ease-out;
     opacity: 0;
-    transition: all 3s linear;
+    height: 0;
+    overflow: hidden;
 }
 
 #nav-container.clicked {
-    /* visibility: visible; */
     opacity: 1;
+    height: auto;
 }
 
 
