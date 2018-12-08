@@ -61,7 +61,7 @@ h1 {
 
 #header-text-wrapper {
     margin-top: 12px;
-    margin-bottom: auto;
+    margin-bottom: 12px;
     max-width: 275px;
     grid-row: 1;
     grid-column: 1;
@@ -107,7 +107,7 @@ h1 {
 #nav-container {
     grid-column: 1 / span 2;
     margin-bottom: 12px;
-    margin-right: 6px;
+    /* margin-right: 6px; */
     transition-property: opacity, height;
     -webkit-transition-property: opacity, height;
     transition-duration: 500ms;
@@ -202,6 +202,11 @@ nav {
 .myButton:active {
 	position:relative;
 	top:1px;
+}
+
+/* Had to add this down here to overwrite button settings */
+.button4 {
+    margin-right: 12px;
 }
 
 /* ----- MAIN BODY / CONTENT ----- */
