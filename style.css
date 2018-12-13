@@ -14,7 +14,7 @@ body {
     font-family: 'Karla', sans-serif;
     font-family: 'Lato', sans-serif;
     background-color: black;
-    text-align: center;
+    
 }
 
 .center {
@@ -145,6 +145,7 @@ nav {
     width: 72px;
     transition-property: opacity, height;
     transition-duration: 500ms;
+    vertical-align: top;
 }
 
 .main-nav button:hover {
@@ -185,6 +186,7 @@ nav {
     padding: auto 12px;
     font-size: 12px;
     max-width: 450px;
+    text-align: justify;
 }
 
 .main-content {
@@ -224,14 +226,6 @@ nav {
     background-color: rgb(0, 0, 0, .8);
     padding-top: 12px;
     padding-bottom: 12px;
-}
-
-.work-pics-container p {
-    /* display: none; */
-}
-
-.work-pic1, .work-pic2 {
-    width: 100%;
 }
 
 
@@ -308,10 +302,11 @@ nav {
         max-width: 950px;
     }
 
-    /* .work-pics-container {
+    .work-pics-container {
         display: flex;
+        /* flex-wrap: wrap; */
         justify-content: space-between;
-    } */
+    }
 
 
 
