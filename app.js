@@ -15,6 +15,10 @@ menuButton.addEventListener("click", function(e) {
         navContainer.classList.add("unclicked");
     };
 
-
-
 });
+
+function onLoad() {
+    menuButton.click();
+};
+
+onLoad();
