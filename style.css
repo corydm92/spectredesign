@@ -177,7 +177,24 @@ nav {
 
 /* ----- MAIN BODY / CONTENT ----- */
 
+#left-portion {
+    /* background-color: gray; */
+    /* margin: 12px 0; */
+}
 
+#about-wrapper2 {
+    text-align: center;
+}
+
+#about-ul {
+    padding-left: 12px;
+}
+
+#profile-pic {
+    margin: 12px 0;
+    width: 100%;
+    max-width: 450px;
+}
 
 .main-container {
     padding: auto 12px;
@@ -299,6 +316,33 @@ nav {
         margin: auto 0;
     }
 
+    #about-container {
+        display: grid;
+        grid-template-columns: 450px 1fr;
+        grid-template-rows: auto;
+        margin: 12px;
+        height: 337.5px;
+    }
+
+    #profile-pic {
+        margin: 0 12px 0 0;
+    }
+
+    #right-portion {
+        height: 337.5px;
+        margin-left: 6px;
+        text-align: justify;
+        background-color: rgb(66, 60, 60, .8)
+    }
+
+    #about-ul {
+        margin-left: 24px;
+    }
+
+    #about-wrapper2 {
+        text-align: justify;    
+    }
+
     .main-container, .home-para-container {
         font-size: 18px;
         max-width: 950px;
@@ -354,6 +398,14 @@ nav {
 
     .header-container {
         max-width: 1400px;
+    }
+
+    #about-wrapper {
+        margin-top: 50.75px;
+    }
+
+    #about-me {
+        margin-top: 0;
     }
 
     .main-container, .home-para-container {
