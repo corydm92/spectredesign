@@ -2,23 +2,23 @@ let menuButton = document.getElementById("menu-button");
 
 let navContainer = document.getElementById("nav-container");
 
+let mainContent = document.getElementById("main-content");
+
+let headerContainer = document.getElementById("header-container");
+
 menuButton.addEventListener("click", function(e) {
 
-    if (navContainer.classList.contains("unclicked")) {
-        menuButton.classList.add("clicked")
-        navContainer.classList.add("clicked");
-        navContainer.classList.remove("unclicked")
+    if (menuButton.classList.contains("unclicked")) {
+        menuButton.classList.add("clicked");
+        menuButton.classList.remove("unclicked");
+
+        document.getElementById("easter-egg").classList.add("show")
         
-    } else if (navContainer.classList.contains("clicked")) {
-        menuButton.classList.remove("clicked")
-        navContainer.classList.remove("clicked");
-        navContainer.classList.add("unclicked");
+    } else if (menuButton.classList.contains("clicked")) {
+        menuButton.classList.add("unclicked");
+        menuButton.classList.remove("clicked");
+        
+        document.getElementById("easter-egg").classList.remove("show")
     };
 
 });
-
-function onLoad() {
-    menuButton.click();
-};
-
-onLoad();

@@ -87,18 +87,17 @@ h1 {
     border-radius: 6px;
     height: 60px;
     filter: invert(100%);
-    transition-duration: 500ms;
-    transition-property: filter, transform, opacity;
+    transition-duration: 250ms;
+    transition-property: opacity, transform;
     transition-timing-function: ease-out;
-}
-
-.menu:hover {
-    opacity: .5;
 }
 
 .menu.clicked {
     transform: rotate(90deg);
-    /* filter: invert(100%); */
+}
+
+.menu:hover {
+    opacity: .5;
 }
 
 .menu img {
@@ -109,23 +108,10 @@ h1 {
 #nav-container {
     grid-column: 1 / span 2;
     margin-bottom: 12px;
-    transition-property: height;
-    -webkit-transition-property: height;
-    transition-duration: 500ms;
-    -webkit-transition-duration: 500ms;
-    transition-timing-function: ease-out;
-    -webkit-transition-duration: ease-out;
-    height: 0;
-    overflow: hidden;
     max-width: 450px;
     margin-left: auto;
     margin-right: auto;
 }
-
-#nav-container.clicked {
-    height: 34px;
-}
-
 
 nav {
     grid-row: 1;
@@ -142,8 +128,7 @@ nav {
     background-color: transparent;
     width: 72px;
     transition-property: opacity;
-    transition-duration: 500ms;
-    vertical-align: top;
+    transition-duration: 250ms;
 }
 
 .main-nav button:hover {
@@ -174,7 +159,21 @@ nav {
     margin-right: 12px;
 }
 
+#easter-egg {
+    text-align: center;
+    grid-column: 1 / span 2;
+    grid-row: 3;
+    margin-top: 0;
+    margin-bottom: 12px;
+    height: 0;
+    overflow: hidden;
+    transition-property: height;
+    transition-duration: 250ms;
+}
 
+#easter-egg.show {
+    height: 39px;
+}
 
 /* ----- MAIN BODY / CONTENT ----- */
 
@@ -191,6 +190,10 @@ nav {
     margin: auto 12px;
 }
 
+.main-content.show {
+    height: 1203px;
+}
+
 .home-para-container {
 
     background-color: rgb(0, 0, 0, .8);
@@ -202,20 +205,17 @@ nav {
     margin: 0 auto;
 }
 
-#please-note {
-    color: yellow;
-    font-style: italic;
-}
-
 .faux-divider1, .faux-divider2, .faux-divider3 {
     border-bottom: 1px solid white; 
     width: 75%;
-    margin: 12px auto 24px;
+    margin: 0 auto 12px;
 }
 
 .work-pic {
     width: 100%;
     max-width: 450px;
+    border: 1px solid white;
+    padding: 1px;
 }
 
 .proj {
@@ -226,11 +226,6 @@ nav {
     padding-top: 12px;
     padding-bottom: 12px;
 }
-
-/* footer {
-    margin-left: 12px;
-    margin-right: 12px;
-} */
 
 /* ----- FOOTER ----- */
 
@@ -269,6 +264,21 @@ nav {
 
     .header-container {
         max-width: 950px;
+        display: grid;
+        grid-template-rows: auto;
+    }
+
+    #nav-container {
+        grid-row: 1;
+        grid-column: 1 / span 2;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 72px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
     }
 
     .main-nav button {
@@ -278,11 +288,6 @@ nav {
 
     .main-content {
         margin: auto 0;
-    }
-
-    /* Transition effect, needed to change height for button sizing */
-    #nav-container.clicked {
-        height: 42px;
     }
 
     .main-container, .home-para-container {
@@ -300,19 +305,19 @@ nav {
     }
 
     #mtg-project {
-        grid-row: 1;
+        grid-row: 2;
     }
 
     #hackertyper {
-        grid-row: 1;
+        grid-row: 2;
     }
 
     #amazon-scraper {
-        grid-row: 2;
+        grid-row: 1;
     }
 
     #amazon-project {
-        grid-row: 2;
+        grid-row: 1;
     }
 
     .main-container p {
@@ -328,14 +333,6 @@ nav {
         display: grid;
         grid-template-columns: 475px 475px;
         grid-template-rows: auto auto auto;
-    }
-
-    .work-pic {
-        max-width: 450px;
-        /* -webkit-box-shadow: 0px 0px 106px -45px rgba(115,115,115,1);
-        -moz-box-shadow: 0px 0px 106px -45px rgba(115,115,115,1);
-        box-shadow: 0px 0px 106px -45px rgba(115,115,115,1); */
-        border: 1px solid white;
     }
 
     .social-img {
@@ -355,8 +352,8 @@ nav {
     }
 
     .work-pics-container {
-        width: 1400px;
-        grid-template-columns: 700px 700px;
+        width: 1050px;
+        grid-template-columns: 525px 525px;
     }
 
     .proj {
